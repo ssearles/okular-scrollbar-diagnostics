@@ -1,12 +1,13 @@
-# Qt Scrollbar Diagnostics for AI Coding Agents
+# Okular's Missing Scrollbar on Omarchy — A Diagnostic Skill for AI Coding Agents
 
-One [agent skill](https://github.com/anthropics/skills) for diagnosing scrollbars
-that render but are effectively invisible — the "there is no scrollbar on the side
-of the window" class of bug — in Qt 6 desktop apps on Wayland.
+**Symptom:** Okular on Omarchy (Arch/Hyprland) shows *no scrollbar on the side of
+the window*. Nothing is hidden or disabled — the scrollbar exists, is functional,
+tracks scroll position correctly, and is simply drawn in near-white on a
+near-white page.
 
-It came out of a real session: Okular 26.08 on Omarchy (Arch/Hyprland) showed no
-document scrollbar at all. It turned out the scrollbar was present, functional,
-and drawn in near-white on a near-white page.
+This is the [agent skill](https://github.com/anthropics/skills) that came out of
+working that exact bug on Okular 26.08. It generalises to any scrollbar that
+renders but is effectively invisible in a Qt 6 desktop app on Wayland.
 
 ## Skill
 

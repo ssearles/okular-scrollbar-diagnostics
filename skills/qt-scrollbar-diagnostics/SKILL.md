@@ -2,16 +2,20 @@
 name: qt-scrollbar-diagnostics
 description: >
   Diagnose scrollbars that are present but invisible in Qt 6 / Qt Widgets desktop
-  apps on Linux Wayland — establishing whether a scrollbar actually exists,
-  measuring its contrast against the surrounding background, and finding what can
-  and cannot change it. Triggers: app has no scrollbar, scrollbar invisible,
-  scrollbar not showing, cannot see the scrollbar, scrollbar too faint, scrollbar
-  white on white, scrollbar hidden, no scroll bar on the side of the window,
-  okular no scrollbar, kate no scrollbar, libreoffice no scrollbar, pdf viewer no
-  scrollbar, low contrast scrollbar, qt scrollbar theme, QT_STYLE_SHEET scrollbar
-  ignored, QT_QPA_PLATFORMTHEME gtk3 scrollbar, kde app scrollbar invisible,
-  diagnose missing scrollbar. Excludes scrolling-layout configuration and
-  compositor-side overlay scrollbars for X11 clients.
+  apps on Linux Wayland — the "no scrollbar on the side of the window" bug.
+  Originated from Okular 26.08 on Omarchy (Arch/Hyprland), where the document
+  scrollbar was functional but drawn near-white on a near-white page. Establishes
+  whether a scrollbar actually exists, measures its contrast against the
+  surrounding background, and finds what can and cannot change it. Triggers:
+  okular no scrollbar, okular missing scrollbar, okular invisible scrollbar,
+  no scrollbar, missing scrollbar, scrollbar not showing, scrollbar invisible,
+  cannot see the scrollbar, scrollbar too faint, scrollbar white on white,
+  no scroll bar on the side of the window, omarchy scrollbar, kate no scrollbar,
+  libreoffice no scrollbar, pdf viewer no scrollbar, low contrast scrollbar,
+  qt scrollbar theme, QT_STYLE_SHEET scrollbar ignored, QT_QPA_PLATFORMTHEME
+  gtk3 scrollbar, kde app scrollbar invisible, diagnose missing scrollbar.
+  Excludes scrolling-layout configuration and compositor-side overlay scrollbars
+  for X11 clients.
 ---
 
 # Qt Scrollbar Diagnostics
