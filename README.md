@@ -15,6 +15,10 @@ renders but is effectively invisible in a Qt 6 desktop app on Wayland.
 
 Finding and fixing low-contrast or unthemed scrollbars in Qt/Qt 6 widgets apps.
 
+> The **repo** is named for the bug it came from (Okular on Omarchy). The
+> **skill** keeps the generic name, because the method applies to any Qt 6 app —
+> `okular-scrollbar-diagnostics/skills/qt-scrollbar-diagnostics` is the path.
+
 - Pixel-level screenshot measurement to establish whether a scrollbar exists
 - Ruling out auto-hiding / overlay scrollbars by tracking the handle across scrolls
 - Separating app settings from OS theme configuration
@@ -90,8 +94,8 @@ the `[PROVEN]` parts as measured and the `[INFERRED]` parts as hypotheses.
 ## Install
 
 ```bash
-git clone https://github.com/ssearles/qt-scrollbar-diagnostics
-cp -r qt-scrollbar-diagnostics/skills/qt-scrollbar-diagnostics ~/.agents/skills/
+git clone https://github.com/ssearles/okular-scrollbar-diagnostics
+cp -r okular-scrollbar-diagnostics/skills/qt-scrollbar-diagnostics ~/.agents/skills/
 ```
 
 ## License
